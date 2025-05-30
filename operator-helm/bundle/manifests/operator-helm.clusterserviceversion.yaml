@@ -1,0 +1,45 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+    createdAt: "2025-05-29T14:00:06Z"
+    operators.operatorframework.io/builder: operator-sdk-v1.39.2
+    operators.operatorframework.io/project_layout: helm.sdk.operatorframework.io/v1
+  name: operator-helm.v0.0.1
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions: {}
+  description: description
+  displayName: nginx-test
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: []
+    strategy: deployment
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - nginx
+  - viewnext
+  links:
+  - name: Operator Helm
+    url: https://operator-helm.domain
+  maintainers:
+  - email: vriverofernandez@viewnext.com
+    name: name1
+  maturity: alpha
+  provider:
+    name: viewnext.com
+  version: 0.0.1

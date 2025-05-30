@@ -1,0 +1,5 @@
+apiVersion: viewnext.com/v1alpha1
+kind: Nginx
+metadata:
+  name: valores
+spec: {}
